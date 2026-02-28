@@ -727,16 +727,48 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-const header = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+const head = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     id: "header",
     children: "This is the header"
 }, "h1", false, {
     fileName: "App.js",
     lineNumber: 3,
-    columnNumber: 16
+    columnNumber: 14
 }, undefined);
+const HeaderComponent = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            head,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "H2 1"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "H2 2"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 5,
+        columnNumber: 10
+    }, undefined);
+};
+_c = HeaderComponent;
 const root = (0, _clientDefault.default).createRoot(document.getElementById('app'));
-root.render(header);
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
+    fileName: "App.js",
+    lineNumber: 12,
+    columnNumber: 13
+}, undefined));
+var _c;
+$RefreshReg$(_c, "HeaderComponent");
 
   $parcel$ReactRefreshHelpers$4931.postlude(module);
 } finally {
