@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+const header=(
+    <h1 id='header' key='h1'>This is the header</h1>
+);
 const root=ReactDOM.createRoot(document.getElementById('app'));
-const head=React.createElement('h1',{id:'header'},'This is the header');
-const tail=React.createElement('h2',{id:'footer'},'This is the footer');
-const container=React.createElement('div',{id:'container'},[head,tail]);
-root.render(container);
+root.render(header);
